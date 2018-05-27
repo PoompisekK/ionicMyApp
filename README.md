@@ -13,4 +13,9 @@ just my first app with ionic
 - Generate new page
     - ionic generate page detail 
 
+
+- git config -l
+- git config --global user.name "something"
+- git config --global user.email "something@some.thing"
+
 ...
