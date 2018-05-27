@@ -10,5 +10,9 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+  goTraveling(){
+    // alert("Test Click!");
+    this.navCtrl.push("TravelingPage");
+  }
 
 }

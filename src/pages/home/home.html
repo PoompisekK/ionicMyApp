@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      MY APP
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      Pages
+    </ion-card-header>
+  
+    <ion-list>
+      <button  (click)="goTraveling()" ion-item>
+        <ion-icon name="photos" item-start></ion-icon>
+        Traveling...
+      </button>
+  
+    </ion-list>
+  </ion-card>
 </ion-content>
