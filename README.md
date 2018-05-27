@@ -12,3 +12,5 @@ just my first app with ionic
     - ionic serve -l //with android, ios, website template
 - Generate new page
     - ionic generate page detail 
+
+...
