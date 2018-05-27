@@ -11,7 +11,6 @@ export class HomePage {
 
   }
   goTraveling(){
-    // alert("Test Click!");
     this.navCtrl.push("TravelingPage");
   }
 
