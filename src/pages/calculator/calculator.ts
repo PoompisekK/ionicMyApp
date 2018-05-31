@@ -35,13 +35,23 @@ export class CalculatorPage {
 
   btnEqual(){
     var a = parseInt(this.inputNum2);
-    alert(this.inputNum2);
+    // alert(this.inputNum2);
     var b = parseInt(this.inputNum);
 
-    // var plus = a+b;
-    // this.inputNum = String(plus);
+    for(var i = 0 ; i <= this.inputNum2.length ; i++){
+      if(this.inputNum2[i] == '+'){
+        var plus = a+b;
+        this.inputNum = String(plus);
 
-    // this.inputNum2 = "";
+        this.inputNum2 = "";
+
+      }else if(this.inputNum2[i] == '-'){
+        var minus = a-b;
+        this.inputNum = String(minus);
+
+        this.inputNum2 = "";
+      }
+    }    
   }  
 
   btnClear(){
