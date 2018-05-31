@@ -10,8 +10,13 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-  goTraveling(){
-    this.navCtrl.push("TravelingPage");
+
+  goTravel(){
+    this.navCtrl.push("TravelPage");
+  }
+
+  goSearching(){
+    this.navCtrl.push("SearchPage");
   }
 
 }

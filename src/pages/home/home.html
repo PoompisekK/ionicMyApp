@@ -1,9 +1,16 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="danger">
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
     <ion-title>
       MY APP
     </ion-title>
+    
   </ion-navbar>
+  
 </ion-header>
 
 <ion-content>
@@ -13,9 +20,14 @@
     </ion-card-header>
   
     <ion-list>
-      <button  (click)="goTraveling()" ion-item>
+      <button  (click)="goTravel()" ion-item>
         <ion-icon name="photos" item-start></ion-icon>
-        Traveling...
+        Travel...
+      </button>
+
+      <button  (click)="goSearching()" ion-item>
+        <ion-icon name="search" item-start></ion-icon>
+        Search...
       </button>
   
     </ion-list>

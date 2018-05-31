@@ -19,3 +19,5 @@ just my first app with ionic
 - git config --global user.email "something@some.thing"
 
 ...
+
+https://stackoverflow.com/questions/43598311/component-is-part-of-the-declaration-of-2-modules
