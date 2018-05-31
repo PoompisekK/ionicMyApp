@@ -8,7 +8,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CalculatorPage {
 
-  inputNum;
+  inputNum = "";
+  inputNum2 = "";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -17,7 +18,38 @@ export class CalculatorPage {
     this.navCtrl.pop();
   }
   
-  btnNumber(){
-      
+  displayNum(type){
+    var a = type;
+    this.inputNum += a;
+  }
+
+  btnPlus(){
+    this.inputNum2 = this.inputNum + " + ";
+    this.inputNum = "";
+  }
+
+  btnMinus(){
+    this.inputNum2 = this.inputNum + " - ";
+    this.inputNum = "";
+  }
+
+  btnEqual(){
+    var a = parseInt(this.inputNum2);
+    alert(this.inputNum2);
+    var b = parseInt(this.inputNum);
+
+    // var plus = a+b;
+    // this.inputNum = String(plus);
+
+    // this.inputNum2 = "";
+  }  
+
+  btnClear(){
+    this.inputNum = "";
+    this.inputNum2 = "";
+  }
+
+  btnDel(){
+
   }
 }

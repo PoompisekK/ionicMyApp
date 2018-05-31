@@ -14,22 +14,39 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content >
 
-    <div class="input-num" ng-cloak> 123 </div>
+  <ion-input [(ngModel)]="inputNum2" font-size=25px></ion-input>
+  <ion-input [(ngModel)]="inputNum" class="input-num2"></ion-input>
 
   <!-- <ion-item>
-    <ion-input id="inputNum" class="input-num" min="0" placeholder="Text Input" type="number" ></ion-input>
+    <ion-input [(ngModel)]="inputNum" min="0" class="input-num" placeholder="Text Input" type="number"></ion-input>
   </ion-item> -->
-  <button ion-button color="light" class="btn-design" (click)="btnNumber()" >7</button>
-  <button ion-button color="light" class="btn-design">8</button>
-  <button ion-button color="light" class="btn-design">9</button> <br>
 
-  <button ion-button color="light" class="btn-design">4</button>
-  <button ion-button color="light" class="btn-design">5</button>
-  <button ion-button color="light" class="btn-design">6</button> <br>
+  <button ion-button color="light" class="btn-design" (click)="btnClear()">C</button>
+  <button ion-button color="light" class="btn-design" (click)="btnDel()">Del</button>
+  <button ion-button color="light" class="btn-design" (click)="btnClear()">%</button>
+  <button ion-button color="light" class="btn-design" (click)="btnClear()">÷</button> <br>
 
-  <button ion-button color="light" class="btn-design">1</button>
-  <button ion-button color="light" class="btn-design">2</button>
-  <button ion-button color="light" class="btn-design">3</button> <br>
+  <button ion-button color="light" class="btn-design" (click)="displayNum('7')">7</button>
+  <button ion-button color="light" class="btn-design" (click)="displayNum('8')">8</button>
+  <button ion-button color="light" class="btn-design" (click)="displayNum('9')">9</button>
+  <button ion-button color="light" class="btn-design" (click)="displayNum('x')">X</button> <br>
+
+  <button ion-button color="light" class="btn-design" (click)="displayNum('4')">4</button>
+  <button ion-button color="light" class="btn-design" (click)="displayNum('5')">5</button>
+  <button ion-button color="light" class="btn-design" (click)="displayNum('6')">6</button> 
+  <button ion-button color="light" class="btn-design" (click)="btnMinus()">-</button> <br>
+
+  <button ion-button color="light" class="btn-design" (click)="displayNum('1')">1</button>
+  <button ion-button color="light" class="btn-design" (click)="displayNum('2')">2</button>
+  <button ion-button color="light" class="btn-design" (click)="displayNum('3')">3</button> 
+  <button ion-button color="light" class="btn-design" (click)="btnPlus()">+</button> <br>
+
+  <button ion-button color="light" class="btn-design" (click)="displayNum('.')">.</button>
+  <button ion-button color="light" class="btn-design" (click)="displayNum('0')">0</button>  
+  <button ion-button color="light" class="btn-design" (click)="displayNum('0')">+/-</button>
+  <button ion-button color="light" class="btn-design" (click)="btnEqual()">=</button> <br>
+
+
 </ion-content>
