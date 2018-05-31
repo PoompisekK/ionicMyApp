@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar color="danger" hideBackButton="true">
+
+    <ion-buttons left>
+      <button ion-button icon-only (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>    
+
+    <ion-title>Calculator</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <div class="input-num" ng-cloak> 123 </div>
+
+  <!-- <ion-item>
+    <ion-input id="inputNum" class="input-num" min="0" placeholder="Text Input" type="number" ></ion-input>
+  </ion-item> -->
+  <button ion-button color="light" class="btn-design" (click)="btnNumber()" >7</button>
+  <button ion-button color="light" class="btn-design">8</button>
+  <button ion-button color="light" class="btn-design">9</button> <br>
+
+  <button ion-button color="light" class="btn-design">4</button>
+  <button ion-button color="light" class="btn-design">5</button>
+  <button ion-button color="light" class="btn-design">6</button> <br>
+
+  <button ion-button color="light" class="btn-design">1</button>
+  <button ion-button color="light" class="btn-design">2</button>
+  <button ion-button color="light" class="btn-design">3</button> <br>
+</ion-content>

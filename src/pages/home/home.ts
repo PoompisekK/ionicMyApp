@@ -19,4 +19,8 @@ export class HomePage {
     this.navCtrl.push("SearchPage");
   }
 
+  goCalculator(){
+    this.navCtrl.push("CalculatorPage");
+  }
+
 }

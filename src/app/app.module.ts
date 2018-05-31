@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 
 import { SearchPageModule } from '../pages/search/search.module';
 import { TravelPageModule } from '../pages/travel/travel.module';
+import { CalculatorPageModule } from '../pages/calculator/calculator.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { TravelPageModule } from '../pages/travel/travel.module';
     IonicModule.forRoot(MyApp),
     SearchPageModule,
     TravelPageModule,
+    CalculatorPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
